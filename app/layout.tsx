@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: '.Enterface, LLC',
+    template: '%s | .Enterface, LLC'
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description: 'Let\'s Mobile-ize Your Brand! Topeka startup specializing in mobile apps, web apps, and design systems. We build products that are not only functional but also a joy to use. With a focus on quality and user experience, we strive to create solutions that make a difference. Whether you\'re a small business or a large enterprise, we\'re here to help you bring your ideas to life.',
 };
 
 const geist = Geist({
