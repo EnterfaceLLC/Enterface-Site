@@ -32,7 +32,8 @@ export const PROJECTS: Project[] = [
     name: 'mobile Munch App',
     description:
       'Topeka\'s number one food truck finder mobile app, built to help you explore the best food trucks in Topeka.',
-    link: 'https://pro.motion-primitives.com/',
+    // link: 'https://pro.motion-primitives.com/',
+    link: 'https://play.google.com/store/apps/details?id=com.dotenterface.mobileMunch&pcampaignid=web_share',
     image:
       '/project_assets/mMunch.png',
     id: 'project1',
@@ -53,7 +54,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Founder, Full Stack Developer',
     start: '2023',
     end: 'Present',
-    link: 'https://',
+    link: 'https://www.linkedin.com/in/rogelio-zamora-jr',
     id: 'work1',
   },
   {
@@ -61,7 +62,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Lead Cinematographer',
     start: '2023',
     end: 'Present',
-    link: 'https://',
+    link: 'https://www.linkedin.com/in/jorge-hernandez',
     id: 'work2',
   },
   // {
@@ -88,39 +89,39 @@ export const BLOG_POSTS: BlogPost[] = [
     link: '/blog/munch-rewards-case-study',
     uid: 'blog-2',
   },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
-  },
+  // {
+  //   title: 'What I learned from my first year of freelancing',
+  //   description:
+  //     'A look back at my first year of freelancing and what I learned',
+  //   link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+  //   uid: 'blog-3',
+  // },
+  // {
+  //   title: 'How to Export Metadata from MDX for Next.js SEO',
+  //   description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
+  //   link: '/blog/example-mdx-metadata',
+  //   uid: 'blog-4',
+  // },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
 
   {
     label: 'Facebook',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.facebook.com/dotEnterface',
   },
   {
-    label: 'X (Twitter)',
-    link: 'https://twitter.com/ibelick',
+    label: 'X',
+    link: 'https://x.com/Dot_Enterface',
   },
 
   {
     label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.instagram.com/mobilemunchapp/',
   },
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/EnterfaceLLC',
   },
 ]
 
