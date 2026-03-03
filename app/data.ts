@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
     description:
       'Topeka\'s number one food truck finder mobile app, built to help you explore the best food trucks in Topeka.',
     // link: 'https://pro.motion-primitives.com/',
-    link: 'https://play.google.com/store/apps/details?id=com.dotenterface.mobileMunch&pcampaignid=web_share',
+    link: 'https://www.facebook.com/people/Mobile-Munch/61553350585218/',
     image:
       '/project_assets/mMunch.png',
     id: 'project1',
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Fiesta Connect App',
     description: 'A mobile app that aims to digitally connect the Topeka community with the cultural tradition, Fiesta Mexicana.',
-    link: 'https://motion-primitives.com/',
+    link: 'https://www.facebook.com/people/Fiesta-Connect/61553350585218/',
     image:
       '/project_assets/mMunch16.9.png',
     id: 'project2',
@@ -62,7 +62,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Lead Cinematographer',
     start: '2023',
     end: 'Present',
-    link: 'https://www.linkedin.com/in/jorge-hernandez',
+    link: 'https://www.linkedin.com/in/jorge-hernandez-193410191',
     id: 'work2',
   },
   // {
