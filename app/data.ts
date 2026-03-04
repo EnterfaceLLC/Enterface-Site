@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     description: 'A mobile app that aims to digitally connect the Topeka community with the cultural tradition, Fiesta Mexicana.',
     link: 'https://www.facebook.com/people/Fiesta-Connect/61553350585218/',
     image:
-      '/project_assets/fcLogo.png',
+      '/project_assets/fCLogo.png',
     id: 'project2',
   },
 ]
