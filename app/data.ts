@@ -35,7 +35,7 @@ export const PROJECTS: Project[] = [
     // link: 'https://pro.motion-primitives.com/',
     link: 'https://www.facebook.com/people/Mobile-Munch/61553350585218/',
     image:
-      '/project_assets/mMunch.png',
+      '/project_assets/mMLogo.png',
     id: 'project1',
   },
   {
@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     description: 'A mobile app that aims to digitally connect the Topeka community with the cultural tradition, Fiesta Mexicana.',
     link: 'https://www.facebook.com/people/Fiesta-Connect/61553350585218/',
     image:
-      '/project_assets/mMunch16.9.png',
+      '/project_assets/fcLogo.png',
     id: 'project2',
   },
 ]
@@ -52,16 +52,16 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Rogelio Zamora Jr.',
     title: 'Founder, Full Stack Developer',
-    start: '2023',
-    end: 'Present',
+    start: 'See',
+    end: 'LinkedIn',
     link: 'https://www.linkedin.com/in/rogelio-zamora-jr',
     id: 'work1',
   },
   {
     company: 'Jorge F. Hernandez',
     title: 'Lead Cinematographer',
-    start: '2023',
-    end: 'Present',
+    start: 'See',
+    end: 'LinkedIn',
     link: 'https://www.linkedin.com/in/jorge-hernandez-193410191',
     id: 'work2',
   },
