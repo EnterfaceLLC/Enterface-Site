@@ -22,6 +22,14 @@ type BlogPost = {
   uid: string
 }
 
+type CaseStudy = {
+  name: string
+  description: string
+  link: string
+  image: string
+  id: string
+}
+
 type SocialLink = {
   label: string
   link: string
@@ -46,12 +54,23 @@ export const PROJECTS: Project[] = [
     id: 'project2',
   },
   {
-    name: 'Wovn',
+    name: 'Wovn App',
     description: 'New 2026 mobile app project - coming soon.',
     link: '/projects/wovn',
     image:
       '/project_assets/dotELogo.png',
     id: 'project3',
+  },
+]
+
+export const CASE_STUDIES: CaseStudy[] = [
+  {
+    name: 'ΛΟΓΟΣ (Logos)',
+    description:
+      'An experimental mobile app, exploring the concept of sharing weekly sermons, bible scriptures, and more.',
+    link: '/case-studies/logos-app',
+    image: '/project_assets/Logos.png',
+    id: 'case-1',
   },
 ]
 

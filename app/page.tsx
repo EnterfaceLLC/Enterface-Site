@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import {
   PROJECTS,
+  CASE_STUDIES,
   WORK_EXPERIENCE,
   BLOG_POSTS,
   EMAIL,
@@ -199,6 +200,37 @@ export default function Personal() {
                 </div>
               </div>
             </Link>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h2 className="mb-2 text-xl font-medium">Case Studies</h2>
+        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
+          A look into the ideas we&apos;re actively exploring — experimental builds, prototypes, and concepts we&apos;re testing before they&apos;re ready for the world.
+        </p>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {CASE_STUDIES.map((study) => (
+            <div key={study.name} className="space-y-2">
+              <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
+                <ProjectImage src={study.image} alt={study.name} />
+              </div>
+              <div className="px-1">
+                <Link
+                  className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+                  href={study.link}
+                >
+                  {study.name}
+                  <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
+                </Link>
+                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                  {study.description}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </motion.section>
