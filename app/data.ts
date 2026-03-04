@@ -32,8 +32,7 @@ export const PROJECTS: Project[] = [
     name: 'mobile Munch App',
     description:
       'Topeka\'s number one food truck finder mobile app, built to help you explore the best food trucks in Topeka.',
-    // link: 'https://pro.motion-primitives.com/',
-    link: 'https://www.facebook.com/people/Mobile-Munch/61553350585218/',
+    link: '/projects/mobile-munch',
     image:
       '/project_assets/mMLogo.png',
     id: 'project1',
@@ -41,10 +40,18 @@ export const PROJECTS: Project[] = [
   {
     name: 'Fiesta Connect App',
     description: 'A mobile app that aims to digitally connect the Topeka community with the cultural tradition, Fiesta Mexicana.',
-    link: 'https://www.facebook.com/people/Fiesta-Connect/61553350585218/',
+    link: '/projects/fiesta-connect',
     image:
       '/project_assets/fCLogo.png',
     id: 'project2',
+  },
+  {
+    name: 'Wovn',
+    description: 'New 2026 mobile app project - coming soon.',
+    link: '/projects/wovn',
+    image:
+      '/project_assets/dotELogo.png',
+    id: 'project3',
   },
 ]
 
@@ -52,17 +59,17 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Rogelio Zamora Jr.',
     title: 'Founder, Full Stack Developer',
-    start: 'See',
-    end: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/rogelio-zamora-jr',
+    start: '2021',
+    end: 'Present',
+    link: '/team/rogelio-zamora',
     id: 'work1',
   },
   {
     company: 'Jorge F. Hernandez',
     title: 'Lead Cinematographer',
-    start: 'See',
-    end: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/jorge-hernandez-193410191',
+    start: '2022',
+    end: 'Present',
+    link: '/team/jorge-hernandez',
     id: 'work2',
   },
   // {

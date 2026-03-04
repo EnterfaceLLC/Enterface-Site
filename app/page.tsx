@@ -52,6 +52,32 @@ function ProjectImage({ src, alt }: ProjectImageProps) {
   )
 }
 
+type CoverProps = {
+  src: string
+  alt: string
+  caption: string
+}
+
+function Cover({ src, alt, caption }: CoverProps) {
+  return (
+    <figure className="space-y-2">
+      <div className="relative aspect-video w-full overflow-hidden rounded-xl">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="100vw"
+          quality={95}
+          className="object-cover"
+        />
+      </div>
+      <figcaption className="text-sm text-zinc-500 dark:text-zinc-400">
+        {caption}
+      </figcaption>
+    </figure>
+  )
+}
+
 function MagneticSocialLink({
   children,
   link,
@@ -103,13 +129,21 @@ export default function Personal() {
             Topeka startup specializing in mobile apps, web apps, and design systems. We build products that are not only functional but also a joy to use. With a focus on quality and user experience, we strive to create solutions that make a difference. Whether you're a small business or a large enterprise, we're here to help you bring your ideas to life. Let's Mobile-ize Your Brand!
           </p>
         </div>
+
+        <div className="mt-10">
+          <Cover
+            src="/project_assets/dotEnterface.png"
+            alt="Image of .Enterface, LLC Banner Logo"
+            caption="Mobile App Development | Topeka KS"
+          />
+        </div>
       </motion.section>
 
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Our Creative Work</h3>
+        <h2 className="mb-5 text-xl font-medium">Our Creative Work</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
@@ -117,14 +151,13 @@ export default function Personal() {
                 <ProjectImage src={project.image} alt={project.name} />
               </div>
               <div className="px-1">
-                <a
+                <Link
                   className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
                   href={project.link}
-                  target="_blank"
                 >
                   {project.name}
                   <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
-                </a>
+                </Link>
                 <p className="text-base text-zinc-600 dark:text-zinc-400">
                   {project.description}
                 </p>
@@ -138,14 +171,12 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">.Enterface Team | 2026</h3>
+        <h2 className="mb-5 text-xl font-medium">.Enterface Team | 2026</h2>
         <div className="flex flex-col space-y-2">
           {WORK_EXPERIENCE.map((job) => (
-            <a
+            <Link
               className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
               href={job.link}
-              target="_blank"
-              rel="noopener noreferrer"
               key={job.id}
             >
               <Spotlight
@@ -167,7 +198,7 @@ export default function Personal() {
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </motion.section>
@@ -176,7 +207,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Our Blogs</h3>
+        <h2 className="mb-3 text-xl font-medium">Our Blogs</h2>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
@@ -212,7 +243,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Let's Connect</h3>
+        <h2 className="mb-5 text-xl font-medium">Let's Connect</h2>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
           Feel free to contact our team at{' '}
           <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
