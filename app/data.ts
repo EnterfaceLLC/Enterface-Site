@@ -30,6 +30,14 @@ type CaseStudy = {
   id: string
 }
 
+type MediaWork = {
+  name: string
+  description: string
+  link: string
+  image: string
+  id: string
+}
+
 type SocialLink = {
   label: string
   link: string
@@ -72,6 +80,25 @@ export const CASE_STUDIES: CaseStudy[] = [
     image: '/project_assets/Logos.png',
     id: 'case-1',
   },
+]
+
+export const MEDIA_WORK: MediaWork[] = [
+  {
+    name: 'El Zócalo Menu — enMotions',
+    description:
+      'Food photography and menu design for El Zócalo, a Topeka-based Mexican restaurant, as part of the enMotions project.',
+    link: '/media/el-zocalo-menu',
+    image: '/project_assets/birriaRamen.jpg',
+    id: 'media-1',
+  },
+  // {
+  //   name: 'mobile Munch Brand Photography',
+  //   description:
+  //     'Brand photography and lifestyle imagery produced for the mobile Munch app across Topeka events and festivals.',
+  //   link: '/media/mobile-munch-brand',
+  //   image: '/project_assets/mMunch16.9.png',
+  //   id: 'media-2',
+  // },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [

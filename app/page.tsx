@@ -8,6 +8,7 @@ import { AnimatedBackground } from '@/components/ui/animated-background'
 import {
   PROJECTS,
   CASE_STUDIES,
+  MEDIA_WORK,
   WORK_EXPERIENCE,
   BLOG_POSTS,
   EMAIL,
@@ -228,6 +229,41 @@ export default function Personal() {
                 </Link>
                 <p className="text-base text-zinc-600 dark:text-zinc-400">
                   {study.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h2 className="mb-2 text-xl font-medium">Our Media Work</h2>
+        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
+          Cinematography, photography, and visual storytelling produced by{' '}
+          <strong className="font-medium text-zinc-900 dark:text-zinc-100">enMotions</strong>
+          {' '}&mdash; the creative media division of .Enterface, LLC. From event coverage to brand visuals, we document the culture and community around every project we build.
+        </p>
+        <div className="grid grid-cols-2 gap-6">
+          {MEDIA_WORK.slice(0, 2).map((item) => (
+            <div key={item.id} className="space-y-2">
+              <Link href={item.link} className="block">
+                <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset transition-opacity hover:opacity-80 dark:bg-zinc-950/40 dark:ring-zinc-800/50">
+                  <ProjectImage src={item.image} alt={item.name} />
+                </div>
+              </Link>
+              <div className="px-1">
+                <Link
+                  className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+                  href={item.link}
+                >
+                  {item.name}
+                  <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
+                </Link>
+                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                  {item.description}
                 </p>
               </div>
             </div>
