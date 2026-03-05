@@ -86,7 +86,7 @@ export const MEDIA_WORK: MediaWork[] = [
   {
     name: 'El Zócalo Menu — enMotions',
     description:
-      'Food photography and menu design for El Zócalo, a Topeka-based Mexican restaurant, as part of the enMotions project.',
+      'Food photography featuring El Zócalo, a Topeka-based Mexican food truck.',
     link: '/media/el-zocalo-menu',
     image: '/project_assets/birriaRamen.jpg',
     id: 'media-1',
