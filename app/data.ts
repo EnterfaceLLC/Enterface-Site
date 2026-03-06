@@ -63,10 +63,10 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Wovn App',
-    description: 'New 2026 mobile app project - coming soon.',
+    description: 'A digital hub built to weave together local entrepreneurs, resources, and community support to create a stronger local economy.',
     link: '/projects/wovn',
     image:
-      '/project_assets/dotELogo.png',
+      '/project_assets/WOVN.png',
     id: 'project3',
   },
 ]
