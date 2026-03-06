@@ -77,7 +77,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     description:
       'An experimental mobile app, exploring the concept of sharing weekly sermons, bible scriptures, and more.',
     link: '/case-studies/logos-app',
-    image: '/project_assets/Logos.png',
+    image: '/project_assets/LogoCover.png',
     id: 'case-1',
   },
 ]
