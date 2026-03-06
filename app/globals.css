@@ -37,7 +37,7 @@
   border-left-color: #ef4444;
 }
 
-.prose ul > li::marker,
-.prose ol > li::marker {
+.prose ul>li::marker,
+.prose ol>li::marker {
   color: #ef4444;
 }
