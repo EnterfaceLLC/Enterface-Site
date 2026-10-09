@@ -69,22 +69,14 @@ export const PROJECTS: Project[] = [
       '/project_assets/WOVN.png',
     id: 'project3',
   },
-  {
-    name: 'DISCVR',
-    description: 'A modern app built for Victory City Church, featuring sermon audio playback, sermon notes, and a connected digital church experience.',
-    link: '/projects/vcc-discvr',
-    image: '/project_assets/DISCVR_CVR.png',
-    id: 'project4',
-  },
 ]
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
-    name: 'ΛΟΓΟΣ (Logos)',
-    description:
-      'An experimental mobile app, exploring the concept of sharing weekly sermons, bible scriptures, and more.',
-    link: '/case-studies/logos-app',
-    image: '/project_assets/LogoCover.png',
+    name: 'DISCVR',
+    description: 'A modern app built for Victory City Church, featuring sermon audio playback, sermon notes, and a connected digital church experience.',
+    link: '/case-studies/vcc-discvr',
+    image: '/project_assets/DISCVR_CVR.png',
     id: 'case-1',
   },
 ]
