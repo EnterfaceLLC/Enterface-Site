@@ -129,6 +129,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title: 'mobile Munch Vendor Portal',
+    description: 'A desktop home for Topeka food truck vendors: plan your week, update your menu, and reach your followers from one place.',
+    link: '/blog/mobile-munch-vendor-portal',
+    uid: 'blog-3',
+  },
+  {
     title: 'The Beginning of mobile Munch',
     description: 'Every great project has a beginning. Here\'s the story of how mobile Munch came to be.',
     link: '/blog/the-beginning-of-mobile-munch',
